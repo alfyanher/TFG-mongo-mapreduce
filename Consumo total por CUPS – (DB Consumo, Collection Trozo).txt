@@ -1,6 +1,0 @@
-var mapFunction1 = function(){ emit(this.CUPS,this.CONSUMO);};
-var reduceFunction1 = function(keyCUPS,valuesCONSUMO){return Array.sum(valuesCONSUMO);};
-
-db.Trozo.mapReduce( mapFunction1, reduceFunction1, {out: "map_reduce_cupsconsumo"}){
-
-db.map_reduce_cupsconsumo.find();
